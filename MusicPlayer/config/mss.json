@@ -1,0 +1,178 @@
+{
+    "precache_settings":[{ 
+        "mode": "True",
+        "dir": "tmp/complete.bin",
+        "saveAtInit": "True"
+    }],
+    "model_settings": [
+     {
+         "name": "genre",
+         "dir": "model/my_genre_model",
+         "thresh": "0"
+     },
+     {
+        "name": "key",
+        "dir": "model/my_model_key",
+        "thresh": "0"
+     },
+     {
+        "name": "energy",
+        "dir": "model/energy_model",
+        "thresh": "0"
+     }
+    ],
+    "genre_models" : [
+        {
+            "id": "0",
+            "name": "BASS HOUSE"
+        },
+        {
+            "id": "1",
+            "name": "BIG ROOM"
+        },
+        {
+            "id": "2",
+            "name": "DEEP HOUSE"
+        },
+        {
+            "id": "3",
+            "name": "ELECTRO HOUSE"
+        },
+        {
+            "id": "4",
+            "name": "FUTURE HOUSE"
+        }
+    ],
+    
+    "key_models" : [
+        {
+            "id": "0",
+            "name": "1A"
+        },
+        {
+            "id": "1",
+            "name": "2A"
+        },
+        {
+            "id": "2",
+            "name": "3A"
+        },
+        {
+            "id": "3",
+            "name": "4A"
+        },
+        {
+            "id": "4",
+            "name": "5A"
+        },
+        {
+            "id": "5",
+            "name": "6A"
+        },
+        {
+            "id": "6",
+            "name": "7A"
+        },
+        {
+            "id": "7",
+            "name": "8A"
+        },
+        {
+            "id": "8",
+            "name": "9A"
+        },
+        {
+            "id": "9",
+            "name": "10A"
+        },
+        {
+            "id": "10",
+            "name": "11A"
+        },
+        {
+            "id": "11",
+            "name": "12A"
+        },
+        {
+            "id": "12",
+            "name": "1B"
+        },
+        {
+            "id": "13",
+            "name": "2B"
+        },
+        {
+            "id": "14",
+            "name": "3B"
+        },
+        {
+            "id": "15",
+            "name": "4B"
+        },
+        {
+            "id": "16",
+            "name": "5B"
+        },
+        {
+            "id": "17",
+            "name": "6B"
+        },
+        {
+            "id": "18",
+            "name": "7B"
+        },
+        {
+            "id": "19",
+            "name": "8B"
+        },
+        {
+            "id": "20",
+            "name": "9B"
+        },
+        {
+            "id": "21",
+            "name": "10B"
+        },
+        {
+            "id": "22",
+            "name": "11B"
+        },
+        {
+            "id": "23",
+            "name": "12B"
+        }
+    ],
+    "energy_models" : [
+        {
+            "id": "0",
+            "name": "Energy 5"
+        },
+        {
+            "id": "1",
+            "name": "Energy 6"
+        },
+        {
+            "id": "2",
+            "name": "Energy 7"
+        },
+        {
+            "id": "3",
+            "name": "Energy 8"
+        },
+        {
+            "id": "4",
+            "name": "Energy 9"
+        }
+    ],
+    "variation" : [
+        {
+            "name": "genre"
+        },
+        {
+            "name": "energy"
+        },
+        {
+           "name": "key"
+        }
+       ]
+}

@@ -1,0 +1,356 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MusicPlayerBPMWithBeatmatching.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_SplashScreen(object):
+    def setupUi(self, SplashScreen):
+        SplashScreen.setObjectName("SplashScreen")
+        SplashScreen.resize(752, 559)
+        SplashScreen.setMouseTracking(True)
+        SplashScreen.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.centralwidget = QtWidgets.QWidget(SplashScreen)
+        self.centralwidget.setObjectName("centralwidget")
+        self.circularProgressBarBase = QtWidgets.QFrame(self.centralwidget)
+        self.circularProgressBarBase.setGeometry(QtCore.QRect(0, 110, 781, 451))
+        self.circularProgressBarBase.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularProgressBarBase.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularProgressBarBase.setObjectName("circularProgressBarBase")
+        self.circularProgress = QtWidgets.QFrame(self.circularProgressBarBase)
+        self.circularProgress.setGeometry(QtCore.QRect(10, 10, 731, 300))
+        self.circularProgress.setStyleSheet("QFrame{\n"
+"    border-radius:150px;\n"
+"    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(85, 170, 255, 0), stop:0.75 rgba(85, 170, 255, 255));\n"
+"\n"
+"}")
+        self.circularProgress.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularProgress.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularProgress.setObjectName("circularProgress")
+        self.container = QtWidgets.QFrame(self.circularProgress)
+        self.container.setGeometry(QtCore.QRect(10, 10, 711, 291))
+        self.container.setStyleSheet("QFrame{\n"
+"border-radius:140px;\n"
+"background-color: rgb(85, 85, 127);\n"
+"}")
+        self.container.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.container.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.container.setObjectName("container")
+        self.title = QtWidgets.QLabel(self.container)
+        self.title.setGeometry(QtCore.QRect(294, 14, 120, 21))
+        font = QtGui.QFont()
+        font.setFamily("Raleway Medium")
+        self.title.setFont(font)
+        self.title.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.title.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.title.setAlignment(QtCore.Qt.AlignCenter)
+        self.title.setObjectName("title")
+        self.stop1 = QtWidgets.QPushButton(self.container)
+        self.stop1.setGeometry(QtCore.QRect(187, 249, 41, 28))
+        self.stop1.setObjectName("stop1")
+        self.play1 = QtWidgets.QPushButton(self.container)
+        self.play1.setGeometry(QtCore.QRect(142, 249, 41, 28))
+        self.play1.setStyleSheet("")
+        self.play1.setObjectName("play1")
+        self.songList = QtWidgets.QListWidget(self.container)
+        self.songList.setGeometry(QtCore.QRect(142, 60, 174, 131))
+        self.songList.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.songList.setObjectName("songList")
+        self.forward1 = QtWidgets.QPushButton(self.container)
+        self.forward1.setGeometry(QtCore.QRect(277, 249, 41, 28))
+        self.forward1.setObjectName("forward1")
+        self.backward1 = QtWidgets.QPushButton(self.container)
+        self.backward1.setGeometry(QtCore.QRect(232, 249, 41, 28))
+        self.backward1.setObjectName("backward1")
+        self.songList2 = QtWidgets.QListWidget(self.container)
+        self.songList2.setGeometry(QtCore.QRect(398, 60, 174, 131))
+        self.songList2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.songList2.setObjectName("songList2")
+        self.forward2 = QtWidgets.QPushButton(self.container)
+        self.forward2.setGeometry(QtCore.QRect(532, 251, 41, 28))
+        self.forward2.setObjectName("forward2")
+        self.play2 = QtWidgets.QPushButton(self.container)
+        self.play2.setGeometry(QtCore.QRect(397, 251, 41, 28))
+        self.play2.setStyleSheet("")
+        self.play2.setObjectName("play2")
+        self.backward2 = QtWidgets.QPushButton(self.container)
+        self.backward2.setGeometry(QtCore.QRect(487, 251, 41, 28))
+        self.backward2.setObjectName("backward2")
+        self.stop2 = QtWidgets.QPushButton(self.container)
+        self.stop2.setGeometry(QtCore.QRect(442, 251, 41, 28))
+        self.stop2.setObjectName("stop2")
+        self.addFile = QtWidgets.QPushButton(self.container)
+        self.addFile.setGeometry(QtCore.QRect(327, 110, 61, 21))
+        self.addFile.setObjectName("addFile")
+        self.songLengthSlider1 = QtWidgets.QSlider(self.container)
+        self.songLengthSlider1.setGeometry(QtCore.QRect(142, 200, 171, 22))
+        self.songLengthSlider1.setOrientation(QtCore.Qt.Horizontal)
+        self.songLengthSlider1.setObjectName("songLengthSlider1")
+        self.songLengthSlider2 = QtWidgets.QSlider(self.container)
+        self.songLengthSlider2.setGeometry(QtCore.QRect(399, 200, 171, 22))
+        self.songLengthSlider2.setOrientation(QtCore.Qt.Horizontal)
+        self.songLengthSlider2.setObjectName("songLengthSlider2")
+        self.songPlayed1 = QtWidgets.QLabel(self.container)
+        self.songPlayed1.setGeometry(QtCore.QRect(144, 36, 171, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.songPlayed1.setFont(font)
+        self.songPlayed1.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.songPlayed1.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.songPlayed1.setAlignment(QtCore.Qt.AlignCenter)
+        self.songPlayed1.setObjectName("songPlayed1")
+        self.uselessButton = QtWidgets.QPushButton(self.container)
+        self.uselessButton.setGeometry(QtCore.QRect(0, 0, 0, 0))
+        self.uselessButton.setStyleSheet("background-color: rgba(0, 0, 0, 0); ")
+        self.uselessButton.setObjectName("useless")
+        self.songLength1 = QtWidgets.QLabel(self.container)
+        self.songLength1.setGeometry(QtCore.QRect(170, 220, 120, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.songLength1.setFont(font)
+        self.songLength1.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.songLength1.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.songLength1.setAlignment(QtCore.Qt.AlignCenter)
+        self.songLength1.setObjectName("songLength1")
+        self.songPlayed2 = QtWidgets.QLabel(self.container)
+        self.songPlayed2.setGeometry(QtCore.QRect(400, 37, 171, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.songPlayed2.setFont(font)
+        self.songPlayed2.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.songPlayed2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.songPlayed2.setAlignment(QtCore.Qt.AlignCenter)
+        self.songPlayed2.setObjectName("songPlayed2")
+        self.songLength2 = QtWidgets.QLabel(self.container)
+        self.songLength2.setGeometry(QtCore.QRect(430, 220, 120, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.songLength2.setFont(font)
+        self.songLength2.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.songLength2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.songLength2.setAlignment(QtCore.Qt.AlignCenter)
+        self.songLength2.setObjectName("songLength2")
+        self.volume1 = QtWidgets.QDial(self.container)
+        self.volume1.setGeometry(QtCore.QRect(50, 100, 61, 71))
+        self.volume1.setObjectName("volume1")
+        self.volume2 = QtWidgets.QDial(self.container)
+        self.volume2.setGeometry(QtCore.QRect(610, 100, 61, 71))
+        self.volume2.setObjectName("volume2")
+        self.circularBg = QtWidgets.QFrame(self.circularProgressBarBase)
+        self.circularBg.setGeometry(QtCore.QRect(10, 10, 731, 311))
+        self.circularBg.setStyleSheet("QFrame{\n"
+"border-radius : 150px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg.setObjectName("circularBg")
+        self.circularBg_2 = QtWidgets.QFrame(self.circularProgressBarBase)
+        self.circularBg_2.setGeometry(QtCore.QRect(130, 330, 241, 111))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.circularBg_2.setFont(font)
+        self.circularBg_2.setStyleSheet("QFrame{\n"
+"border-radius : 195px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg_2.setObjectName("circularBg_2")
+        self.actionLabel = QtWidgets.QLabel(self.circularBg_2)
+        self.actionLabel.setGeometry(QtCore.QRect(10, 40, 221, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.actionLabel.setFont(font)
+        self.actionLabel.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.actionLabel.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.actionLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.actionLabel.setObjectName("actionLabel")
+        self.circularBg_3 = QtWidgets.QFrame(self.circularProgressBarBase)
+        self.circularBg_3.setGeometry(QtCore.QRect(380, 330, 241, 111))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.circularBg_3.setFont(font)
+        self.circularBg_3.setStyleSheet("QFrame{\n"
+"border-radius : 195px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg_3.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg_3.setObjectName("circularBg_3")
+        self.energyCounter = QtWidgets.QLabel(self.circularBg_3)
+        self.energyCounter.setGeometry(QtCore.QRect(85, 40, 71, 61))
+        font = QtGui.QFont()
+        font.setFamily("Roboto")
+        font.setPointSize(26)
+        font.setBold(False)
+        font.setWeight(50)
+        self.energyCounter.setFont(font)
+        self.energyCounter.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.energyCounter.setAlignment(QtCore.Qt.AlignCenter)
+        self.energyCounter.setObjectName("energyCounter")
+        self.energyCounter.setStyleSheet("color:#ffffff;\n"
+"")
+        self.energyLabel = QtWidgets.QLabel(self.circularBg_3)
+        self.energyLabel.setGeometry(QtCore.QRect(10, 10, 221, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.energyLabel.setFont(font)
+        self.energyLabel.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.energyLabel.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.energyLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.energyLabel.setObjectName("energyLabel")
+        self.circularBg_2.raise_()
+        self.circularBg.raise_()
+        self.circularProgress.raise_()
+        self.circularBg_3.raise_()
+        self.circularBg_4 = QtWidgets.QFrame(self.centralwidget)
+        self.circularBg_4.setGeometry(QtCore.QRect(277, 70, 191, 41))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.circularBg_4.setFont(font)
+        self.circularBg_4.setStyleSheet("QFrame{\n"
+"border-radius : 195px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg_4.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg_4.setObjectName("circularBg_4")
+        self.beatmatching = QtWidgets.QLabel(self.circularBg_4)
+        self.beatmatching.setGeometry(QtCore.QRect(-14, 10, 221, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(12)
+        font.setBold(False)
+        self.beatmatching.setFont(font)
+        self.beatmatching.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.beatmatching.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.beatmatching.setAlignment(QtCore.Qt.AlignCenter)
+        self.beatmatching.setObjectName("beatmatching")
+        self.circularBg_6 = QtWidgets.QFrame(self.centralwidget)
+        self.circularBg_6.setGeometry(QtCore.QRect(138, 40, 131, 71))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.circularBg_6.setFont(font)
+        self.circularBg_6.setStyleSheet("QFrame{\n"
+"border-radius : 195px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg_6.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg_6.setObjectName("circularBg_6")
+        self.bpm1 = QtWidgets.QLabel(self.circularBg_6)
+        self.bpm1.setGeometry(QtCore.QRect(1, 12, 131, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(13)
+        font.setBold(True)
+        self.bpm1.setFont(font)
+        self.bpm1.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.bpm1.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.bpm1.setAlignment(QtCore.Qt.AlignCenter)
+        self.bpm1.setObjectName("bpm1")
+        self.initialKey1 = QtWidgets.QLabel(self.circularBg_6)
+        self.initialKey1.setGeometry(QtCore.QRect(35, 37, 61, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(13)
+        font.setBold(False)
+        self.initialKey1.setFont(font)
+        self.initialKey1.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.initialKey1.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.initialKey1.setAlignment(QtCore.Qt.AlignCenter)
+        self.initialKey1.setObjectName("initialKey1")
+        self.circularBg_7 = QtWidgets.QFrame(self.centralwidget)
+        self.circularBg_7.setGeometry(QtCore.QRect(476, 40, 131, 71))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.circularBg_7.setFont(font)
+        self.circularBg_7.setStyleSheet("QFrame{\n"
+"border-radius : 195px;\n"
+"background-color: rgba(85, 85, 127, 120);\n"
+"}")
+        self.circularBg_7.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.circularBg_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.circularBg_7.setObjectName("circularBg_7")
+        self.bpm2 = QtWidgets.QLabel(self.circularBg_7)
+        self.bpm2.setGeometry(QtCore.QRect(1, 12, 131, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(13)
+        font.setBold(True)
+        self.bpm2.setFont(font)
+        self.bpm2.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.bpm2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.bpm2.setAlignment(QtCore.Qt.AlignCenter)
+        self.bpm2.setObjectName("bpm2")
+        self.initialKey2 = QtWidgets.QLabel(self.circularBg_7)
+        self.initialKey2.setGeometry(QtCore.QRect(35, 37, 61, 21))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(13)
+        font.setBold(False)
+        self.initialKey2.setFont(font)
+        self.initialKey2.setStyleSheet("background-color:none;\n"
+"color:#FFFFFF;\n"
+"")
+        self.initialKey2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.initialKey2.setAlignment(QtCore.Qt.AlignCenter)
+        self.initialKey2.setObjectName("initialKey2")
+        SplashScreen.setCentralWidget(self.centralwidget)
+        self.play1.setIcon(QtGui.QIcon("play.png"))
+        self.play2.setIcon(QtGui.QIcon("play.png"))
+        self.forward1.setIcon(QtGui.QIcon("forward.png"))
+        self.forward2.setIcon(QtGui.QIcon("forward.png"))
+        self.backward1.setIcon(QtGui.QIcon("backward.png"))
+        self.backward2.setIcon(QtGui.QIcon("backward.png"))
+        self.stop1.setIcon(QtGui.QIcon("stop.png"))
+        self.stop2.setIcon(QtGui.QIcon("stop.png"))
+        self.retranslateUi(SplashScreen)
+        QtCore.QMetaObject.connectSlotsByName(SplashScreen)
+
+    def retranslateUi(self, SplashScreen):
+        _translate = QtCore.QCoreApplication.translate
+        SplashScreen.setWindowTitle(_translate("SplashScreen", "MainWindow"))
+        self.title.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600; color:#ababff;\">AI </span><span style=\" font-size:10pt;\">DJ</span></p><p><br/></p></body></html>"))
+        self.addFile.setText(_translate("SplashScreen", "Add File"))
+        self.actionLabel.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-size:11pt;\">Action Recognition</span></p></body></html>"))
+        self.energyCounter.setText(_translate("SplashScreen", "0"))
+        self.energyLabel.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-size:11pt;\">Energy Level</span></p></body></html>"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    SplashScreen = QtWidgets.QMainWindow()
+    ui = Ui_SplashScreen()
+    ui.setupUi(SplashScreen)
+    SplashScreen.show()
+    sys.exit(app.exec_())
+
