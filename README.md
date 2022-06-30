@@ -3,6 +3,8 @@ AI DJ System For Electronic Dance Music
 
 AI DJ system is an automated DJ system combining action recognition, song selection, and beatmatching with equalizer mixing
 
+
+
 Prerequisites
 -------------
 
@@ -47,3 +49,19 @@ and run the code by:
 ```
 python main.py
 ```
+
+How to use
+-----------
+- First run the main program
+```
+python main.py
+```
+- Wait until the loading process has been done, press add file, and then choose the songs that you want 
+- We provide 400 edm songs example, please contact us if you need: puffcornmusic@gmail.com
+
+![](https://i.imgur.com/A4EsreY.png)
+- Choose the song and press play button
+
+![](https://i.imgur.com/vDuMHVI.png)
+- Press ESC button to close the program
+- Enjoy AI DJ :D 
