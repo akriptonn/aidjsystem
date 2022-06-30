@@ -56,12 +56,12 @@ How to use
 ```
 python main.py
 ```
-- Wait until the loading process has been done, press add file, and then choose the songs that you want 
-- We provide 100 edm songs example, please contact us if you need: puffcornmusic@gmail.com
+- Wait until the loading process has been done, press **Add File**, and then choose the songs that you want to load. 
+(We also provide 100  songs example, please contact us if you need: puffcornmusic@gmail.com)
 
 ![](https://i.imgur.com/A4EsreY.png)
-- Choose the song and press play button
+- Choose the song and press **Play Button**
 
 ![](https://i.imgur.com/vDuMHVI.png)
-- Press ESC button to close the program
+- Press **ESC** button to close the program
 - Enjoy AI DJ :D 
