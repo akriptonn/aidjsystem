@@ -21,18 +21,26 @@ AI DJ system was tested on Python 3.8.5 and the following packages have to be in
 - `yodel==0.3.0`
 - `tensorflow==2.6.0`
 
+AI DJ system also require NVIDIA GPU for optimal performance.
+
 Installation
 -------------
+Open the command prompt, install git LFS, and clone the repository
+```
+git lfs install
+git clone https://github.com/akriptonn/aidjsystem.git
+```
 Create an environment for AIDJ-System
 ```
 conda create -n AIDJ-System python=3.8.5 -y
 conda activate AIDJ-System
+conda install -c anaconda tensorflow-gpu=2.6.0
 ```
 Installation steps as below:
 ```
-cd AIDJ-System/MusicPlayer
-pip install cython
-pip install numpy
+cd aidjsystem/MusicPlayer
+pip install pipwin
+pipwin install pyaudio
 pip install -r requirements.txt
 ```
 and run the code by:

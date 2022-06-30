@@ -34,6 +34,12 @@ import mediapipe as mp
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+    def keyPressEvent(self, event):
+        pressed_button = event.key()
+        if pressed_button == QtCore.Qt.Key_Escape:
+            self.close()
+        else:
+            pass
                 
 class MusicPlayer():
     def __init__(self):
@@ -550,7 +556,12 @@ class MusicPlayer():
             print(CONSTANT_KEY[initialKey['key']])
             
             #Convert To WAV
-            subprocess.run(['ffmpeg', '-i', f[0][i] , tempSongname + '.wav'], capture_output=True, text=True, input="y")                       
+            print(f[0][i])
+            print(tempSongname)
+            try:
+                subprocess.run(['ffmpeg', '-i', f[0][i].encode('utf-8') , tempSongname + '.wav'], capture_output = True, text=True, input="y")        
+            except:
+                pass               
 
             #Save song to songlist
             self.ui.songList.insertItem(self.index, tempSongname)
@@ -605,7 +616,7 @@ class MusicPlayer():
             self.playlist[self.index].append(soundOri)
             self.playlist[self.index].append(chunk)
             self.playlist[self.index].append(cleanedDownbeat)
-            self.playlist[self.index].append(energy.get('energy')+5)
+            self.playlist[self.index].append(energy.get('energy')+1)
             self.playlist[self.index].append(CONSTANT_KEY[initialKey['key']])
             self.playlist.append([])
             

@@ -9,4 +9,3 @@ pyrubberband==0.3.0
 scikit_learn==1.1.1
 scipy==1.7.1
 yodel==0.3.0
-tensorflow==2.4.1
