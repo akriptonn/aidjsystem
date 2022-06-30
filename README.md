@@ -23,3 +23,19 @@ AI DJ system was tested on Python 3.8.5 and the following packages have to be in
 
 Installation
 -------------
+Create an environment for AIDJ-System
+```
+conda create -n AIDJ-System python=3.8.5 -y
+conda activate AIDJ-System
+```
+Installation steps as below:
+```
+cd AIDJ-System/MusicPlayer
+pip install cython
+pip install numpy
+pip install -r requirements.txt
+```
+and run the code by:
+```
+python main.py
+```
