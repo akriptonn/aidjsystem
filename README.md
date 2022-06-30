@@ -57,7 +57,7 @@ How to use
 python main.py
 ```
 - Wait until the loading process has been done, press add file, and then choose the songs that you want 
-- We provide 400 edm songs example, please contact us if you need: puffcornmusic@gmail.com
+- We provide 100 edm songs example, please contact us if you need: puffcornmusic@gmail.com
 
 ![](https://i.imgur.com/A4EsreY.png)
 - Choose the song and press play button
