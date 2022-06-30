@@ -19,7 +19,7 @@ AI DJ system was tested on Python 3.8.5 and the following packages have to be in
 - `scikit_learn==1.1.1`
 - `scipy==1.7.1`
 - `yodel==0.3.0`
-- `tensorflow==2.4.1`
+- `tensorflow==2.6.0`
 
 Installation
 -------------
