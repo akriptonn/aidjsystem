@@ -171,7 +171,7 @@ class MusicPlayer():
         model.add(Dense(3, activation='softmax'))
 
         #Load Model
-        model.load_weights('model/actions.h5')
+        model.load_weights('model\\actions.h5')
 
         colors = [(245,117,16), (117,245,16), (16,117,245)]
         def prob_viz(res, actions, input_frame, colors):
