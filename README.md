@@ -1,7 +1,7 @@
 AI DJ System For Electronic Dance Music
 =======================================
 
-AI DJ system is an automated DJ system combining action recognition, song selection, and beatmatching with equalizer mixing
+[**AI DJ system**](https://github.com/akriptonn/aidjsystem/) is an automated DJ system combining action recognition, song selection, and beatmatching with equalizer mixing.
 
 
 
