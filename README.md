@@ -47,3 +47,18 @@ and run the code by:
 ```
 python main.py
 ```
+
+How to use
+-----------
+- First run the main program
+```
+python main.py
+```
+- Wait until the loading process has been done, press add file, and then choose the song that you want (we provide 50 edm songs example that can be [downloaded here]())
+
+![](https://i.imgur.com/A4EsreY.png)
+- Choose the song and press play button
+
+![](https://i.imgur.com/vDuMHVI.png)
+- Press ESC button to close the program
+- Enjoy AI DJ :D 
