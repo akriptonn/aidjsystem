@@ -13,7 +13,7 @@ AI DJ system was tested on Python 3.8.5 and the following packages have to be in
 - `madmom==0.16.1`
 - `librosa==0.8.1`
 - `mediapipe==0.8.8.1`
-- `opencv_python==4.5.4.58`
+- `opencv_python==4.5.5.64`
 - `pandas==1.3.4`
 - `pydub==0.25.1`
 - `PyQt5==5.15.7`
