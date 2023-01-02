@@ -3,7 +3,7 @@ AI DJ System For Electronic Dance Music
 
 [![DOI](https://zenodo.org/badge/508821637.svg)](https://zenodo.org/badge/latestdoi/508821637)
 
-[**AI DJ system**](https://github.com/akriptonn/aidjsystem/) is an automated DJ system combining action recognition, song selection, and beatmatching with equalizer mixing. This system is created with support from Broadband Multimedia Wireless (BMW) Lab, National Taiwan University of Science and Technology as part of [AI DJ System paper](https://www.overleaf.com/project/6214a8374bdbb15043e2fdbe). 
+[**AI DJ system**](https://github.com/akriptonn/aidjsystem/) is an automated DJ system combining action recognition, song selection, and beatmatching with equalizer mixing. This system is created with support from Broadband Multimedia Wireless (BMW) Lab, National Taiwan University of Science and Technology as part of [AI DJ System paper](https://ieeexplore.ieee.org/document/9980591). 
 
 
 
